@@ -3,33 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Document</title>
+  <title>Login</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"/>
   <link rel="stylesheet" type="text/css" href="esq.css" />
 </head>
 <body>
 
-  <img class="imagem" src="./asstes/pc icon.png" height="190px" width="190px" />
-  
-
   <div class="container-centralizado">
-    <img class="imagem" src="./asstes/pc icon.png" height="190" width="190" alt="Ícone" />
-    <h1 href="./pagina.html" class="h1">Login</h1>
+    <img class="icone-login" src="./asstes/pc icon.png" height="190" width="190" alt="Ícone de Login" />
+    <h1 class="titulo-login">Login</h1>
 
-  <div class="input-container-horizontal">
-    <label for="usuario">Usuário:</label>
-    <input type="text" id="usuario" name="usuario" placeholder="Digite seu login"/>
-  </div>
-
-    <div class="input-container-horizontal" style="margin-top: 20px;">
+    <form id="loginForm">
+      <div class="input-container-horizontal">
+        <label for="usuario">Usuário:</label>
+        <input type="text" id="usuario" name="usuario" placeholder="Digite seu login" />
+      </div>
+    
+      <div class="input-container-horizontal">
         <label for="senha">Senha:</label>
         <input type="password" id="senha" name="senha" placeholder="Digite sua senha" />
       </div>
-
-      <div class="container-centralizado">
-        <button class="btn-login" type="submit">Login</button>
+    
+      <div style="margin-top: 20px;">
+        <button class="btn-login" type="submit" id="loginBtn" disabled>Login</button>
       </div>
+    </form>        
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
+
